@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scope</title>
+  <script src="angular.js"></script>
+  <script src="demo.js"></script>
+  <style>
+    cat-list { color:blue; }
+    [cat-list] { color:red; }
+    .cat-list { color:green; }
+  </style>
+</head>
+<body ng-app="app">
+
+  <input ng-model="catName" />{{catName}}
+  <hr />
+  <cat-list>hello from the DOM</cat-list>
+  <!-- <div cat-list>hello from the DOM</div> -->
+  <!-- <div class="cat-list">hello from the DOM</div> -->
+</body>
+</html>
